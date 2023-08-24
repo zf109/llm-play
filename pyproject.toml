@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "llm-play"
+version = "0.1.0"
+description = "A DnD Dungeon Master assistant using GPT-4 and LangChain agents."
+authors = ["Your Name <your_email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11.4"
+requests = "^2.26"  # if you're using the 'requests' library for API calls, for example
+ipython = "^8.14.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"   # if you're using pytest for tests
+
+[tool.poetry.scripts]
+start = "python llmcore/main.py"
